@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "references",
+  "info": {
+    "singularName": "reference",
+    "pluralName": "references",
+    "displayName": "Reference",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "referent": {
+      "type": "string",
+      "required": true
+    },
+    "titreReferent": {
+      "type": "string",
+      "required": true
+    },
+    "referent2": {
+      "type": "string"
+    },
+    "titreReferent2": {
+      "type": "string"
+    },
+    "tasks": {
+      "type": "richtext"
+    },
+    "missionDetails": {
+      "type": "richtext"
+    }
+  }
+}

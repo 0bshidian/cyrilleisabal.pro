@@ -1,0 +1,28 @@
+<div uk-grid>
+	<a href=""><img src="../assets/logo.png" alt="logo" height="200" width="200"></a>
+
+	<div class="uk-container conteneur-principal uk-width-expand">
+		<div class="head uk-section" uk-grid>
+			<div class="uk-text-center uk-width-3-5">
+				<strong class="uk-text-italic nom">Cyrille Isabal</strong>
+				<br/>
+				<strong class="uk-text-italic consult"> Consultante en Finances Locales Freelance </strong>
+			</div>	
+			<div class="uk-text-center uk-width-2-5">
+				<a href="linkedingoeshere" class="uk-icon-link" uk-icon="icon: linkedin; ratio: 2"></a>
+			</div>
+		</div>
+		<div class="uk-width-expand">
+			<ul class="uk-navbar-nav uk-navbar-container">
+				<li class="uk-width-1-8"></li>
+				<li class="uk-active uk-width-1-8"><a href="">Qui suis-je ?</a></li>
+				<li class="uk-active"><a href="competences">Domaine de Compétences</a></li>
+				<li class="uk-active"><a href="references">Références</a></li>
+				<li class="uk-active"><a href="articles">Actualités</a></li>
+				<li class="uk-active"><a href="">Mes Services</a><li>
+				<li class="uk-active"><a href="contact">Contact</a></li>
+				<li class="uk-width-1-8"></li>
+			</ul>
+		</div>
+	</div>
+</div>

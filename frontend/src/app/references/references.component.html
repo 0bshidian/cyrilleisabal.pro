@@ -1,0 +1,20 @@
+<div class ="uk-section">
+        <div class="uk-container uk-container-large">
+                <h2 class='uk-text-center'>Quelques références : </h2>
+			<div *ngFor="let reference of leftReferences "uk-grid>
+				<div class='uk-width-1-5'></div>
+				<div class='reference present uk-width-3-5'>
+					<span class='uk-text-uppercase uk-margin-left'><strong>{{ reference.attributes.title }}</strong></span><br>
+					<markdown *ngIf="reference.attributes.missionDetails">{{ reference.attributes.missionDetails }}</markdown>
+					<span>{{ reference.attributes.referent }} - {{ reference.attributes.titreReferent }}</span><br>
+					<span *ngIf="reference.attributes.referent2"> {{ reference.attributes.referent2 }} - {{ reference.attributes.titreReferent2 }}<br> </span>
+					<markdown>{{ reference.attributes.tasks }}</markdown>
+				</div>
+				<div class='uk-width-1-5'></div>
+			</div>
+        </div>
+	<br>
+	<div class="uk-text-center">
+		<a href="/contact"><p> Me Contacter </p></a>
+	</div>
+</div>                                          

@@ -1,0 +1,21 @@
+<div class ="uk-section">
+	<div class="uk-container uk-container-large">
+		<div class='uk-width-1-7'>
+		</div>
+		<div class='uk-width-extend'>
+		<h2 class="uk-text-center"> Mes Domaines de Compétences :</h2>
+			<ul class="competences">
+				<li class="competences" *ngFor="let competence of leftCompetences">
+					<p> {{ competence.attributes.title }} :  {{ competence.attributes.content }} </p>
+					<div class="uk-card uk-card-body uk-text-center">
+						<img src="../assets/littleLogo.png">
+					</div>
+					<br>
+				</li>
+			</ul>
+			<div class="uk-text-center"><a href="contact">  ME CONTACTER  </a><br></div>
+		</div>
+		<div class="uk-width-1-7">
+			<a href="competences" uk-totop uk-scroll uk-sticky></a>
+		</div>
+</div>

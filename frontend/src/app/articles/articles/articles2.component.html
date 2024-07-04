@@ -1,0 +1,45 @@
+<div class="uk-section">
+	<div class="uk-container uk-container-large">
+		<h1>Liste des Articles</h1>
+			<div class="uk-child-width-1-2" uk-grid>
+				<a routerLink="/articles/{{ article.id }}" routerLinkActive="active" *ngFor="let article of leftArticles" class="uk-link-reset" uk-toggle>
+					<div class="uk-card uk-card-muted">
+						<div *ngIf="article.attributes.image" class="uk-card-media-top">
+							<img src="http://localhost:1337{{ article.attributes.image.data.attributes.url }}" alt="" height="100"/>
+						</div>
+						<div class="uk-card-body">
+							<p id="category" *ngIf="article.attributes.categorie" class="uk-text-uppercase" >
+								{{ article.attributes.categorie.data.attributes.name }}
+							</p>								
+							<p id="title" class="uk-text-large">{{ article.attributes.title }}</p>
+							<p id="tempsLecture" class="uk-text">{{ article.attributes.tempsLecture }} minutes.</p>
+						</div>
+					</div>
+				</a>	
+			<div>
+				<div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
+					<a routerLink="/articles/{{ article.id }}" routerLinkActive="active" *ngFor="let article of rightArticles" class="uk-link-reset">
+						<div class="uk-card uk-card-muted">
+							<div *ngIf="article.attributes.image" class="uk-card-media-top">
+								<img src= "http://localhost:1337{{ article.attributes.image.data.attributes.url }}" alt="" height="100" />
+							</div>
+							<div class="uk-card-body">
+								<p id="category" *ngIf="article.attributes.categorie" class="uk-text-uppercase">
+									{{ article.attributes.categorie.data.attributes.name }}
+								</p>
+								<p id="title" class="uk-text-large">{{ article.attributes.title }}</p>
+								<p id="tempsLecture" class="uk-text">{{ article.attributes.tempsLecture}} minutes.</p>
+							</div>
+						</div>	
+					</a>
+				</div>
+			</div> 
+			</div>
+	</div>
+</div>
+<!--
+<div id="article-modal" uk-modal>
+	<div class="uk-modal-dialog uk-modal-body">
+		<app-article></app-article>
+	</div>
+</div>-->

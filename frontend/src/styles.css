@@ -1,0 +1,125 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/uikit/dist/css/uikit.min.css";
+@import "../node_modules/uikit/dist/css/uikit.css";
+@import "../node_modules/uikit/dist/css/uikit-core.css";
+@import url("https://fonts.googleapis.com/css?family=Staatliches");
+@import url("https://fonts.cdnfonts.com/css/dengxian");
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	font-family: Staatliches;
+	font-size: 120px;
+}
+
+body {
+	background: #DDF1FD;
+}
+
+html {
+	background: #DDF1FD;
+	height: 100%;
+}
+
+#category {
+	font-family: Staatliches;
+	font-weight: 500;
+}
+
+#title {
+	letter-spacing: 0.4px;
+	font-size: 22px;
+	font-size: 1.375rem;
+	line-height: 1.13636;
+}
+
+#banner {
+	margin: 20px;
+	height: 800px;
+}
+
+#editor {
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 1.75;
+}
+
+.uk-navbar-container {
+	background: #073A7C !important;
+	font-family: Staatliches;
+}
+
+.basdepage {
+        background: #C0E8FF;
+        text-align : center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+}
+
+.articles {
+	background: #ECF8FF;
+	border-style: groove;
+}
+
+.underlined {
+	text-decoration: underline; 
+}
+
+.head {
+	background: #1E45D0;
+	font-size: 3em; 
+	color: #FFFFFF 
+}
+
+.conteneur-principal {
+	display: flex; 
+	flex-direction: column;
+	height: auto;	
+	width: auto; 
+}
+
+.consult {
+	font-size: 0.7em;
+}
+
+.present {
+	font: "DengXian", sans-serif ; 
+	letter-spacing:0.1em;
+	font-size: 1.25em;
+	border-radius: 30px;
+}
+
+.titre {
+	font: "DengXian", sans-serif ;
+	font-size: 1.3em;
+}
+
+.competences{
+	font: "DengXian", sans-serif ;
+        letter-spacing:0.2em;
+	font-size: 1.2em;
+
+}
+.form{
+	border: 1px solid #000000;
+	margin: 1em;
+}
+
+.reference{
+	background: #ECF8FF;
+	border-radius: 30px;
+}
+
+.logo-linkedin{
+	background-color: #FFFFFF; 
+	border-radius: 50%;
+}
+
+img:hover {
+	opacity: 1;
+	transition: opacity 0.25s cubic-bezier(0.39, 0.575, 0.656, 1);
+}
